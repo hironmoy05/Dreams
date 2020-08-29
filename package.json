@@ -1,0 +1,31 @@
+{
+  "name": "mix",
+  "version": "1.0.0",
+  "description": "Landing page for mix",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gaurav",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.19"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "css-loader": "^4.2.1",
+    "postcss-advanced-variables": "^3.0.1",
+    "postcss-css-variables": "^0.17.0",
+    "postcss-hexrgba": "^2.0.1",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-mixins": "^6.2.3",
+    "postcss-nested": "^4.2.3",
+    "postcss-simple-vars": "^5.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

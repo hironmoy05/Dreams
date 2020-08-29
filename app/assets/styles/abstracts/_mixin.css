@@ -1,0 +1,42 @@
+@define-mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@define-mixin phone {
+  @media only screen and (min-width: 36em) {
+    /*576px*/
+    @mixin-content;
+  }
+}
+
+@define-mixin tabPort {
+  @media only screen and (min-width: 48em) {
+    /*768px*/
+    @mixin-content;
+  }
+}
+
+@define-mixin tabLand {
+  @media only screen and (min-width: 62em) {
+    /*992px*/
+    @mixin-content;
+  }
+}
+
+@define-mixin desktop {
+  @media only screen and (min-width: 75em) {
+    /*1200px*/
+    @mixin-content;
+  }
+}
+
+@define-mixin bigDesktop {
+  @media only screen and (min-width: 87.5em) {
+    /*1400px*/
+    @mixin-content;
+  }
+}
