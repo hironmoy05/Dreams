@@ -1,26 +1,122 @@
 .container {
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
 
-  @mixin phone {
-    max-width: 540px;
-  }
+	@mixin phone {
+		max-width: 540px;
+	}
 
-  @mixin tabPort {
-    max-width: 720px;
-  }
+	@mixin tabPort {
+		max-width: 720px;
+	}
 
-  @mixin tabLand {
-    max-width: 960px;
-  }
+	@mixin tabLand {
+		max-width: 960px;
+	}
 
-  @mixin desktop {
-    max-width: 1140px;
-  }
+	@mixin desktop {
+		max-width: 1140px;
+	}
 
-  @mixin bigDesktop {
-    max-width: 1320px;
-  }
+	@mixin bigDesktop {
+		max-width: 1320px;
+	}
+}
+
+.row {
+	display: flex;
+	flex: 1 0 100%;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+
+	&:not(:last-child) {
+		margin-bottom: $gutter-vertical;
+	}
+}
+
+[class^="col"] {
+	padding-left: 15px;
+	padding-right: 15px;
+
+	&:not(:last-child) {
+		margin-right: $gutter-horizontal;
+	}
+}
+
+.col {
+
+	&-1-12,
+	&-2-12,
+	&-3-12,
+	&-4-12,
+	&-5-12,
+	&-6-12,
+	&-7-12,
+	&-8-12,
+	&-9-12,
+	&-10-12,
+	&-11-12,
+	&-12-12 {
+		position: relative;
+		width: 100%;
+	}
+}
+
+/* //? For col-of-12 */
+@mixin phone {
+
+	.col-1-12 {
+		flex: 0 0 8.333333%;
+	}
+
+	.col-2-12 {
+		flex: 0 0 16.666667%;
+	}
+
+	.col-3-12 {
+		flex: 0 0 25%;
+	}
+
+	.col-4-12 {
+		flex: 0 0 33.333333%;
+	}
+
+	.col-5-12 {
+		flex: 0 0 41.666667%;
+
+		@mixin tabLand {
+			flex: 0 0 40.666667%;
+		}
+	}
+
+	.col-6-12 {
+		flex: 0 0 50%;
+	}
+
+	.col-7-12 {
+		flex: 0 0 58.333333%;
+	}
+
+	.col-8-12 {
+		flex: 0 0 66.666667%;
+	}
+
+	.col-9-12 {
+		flex: 0 0 70%;
+	}
+
+	.col-10-12 {
+		flex: 0 0 83.333333%;
+	}
+
+	.col-11-12 {
+		flex: 0 0 91.666667%;
+	}
+
+	.col-12-12 {
+		flex: 0 0 100%;
+	}
 }

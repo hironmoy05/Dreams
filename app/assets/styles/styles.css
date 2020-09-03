@@ -4,6 +4,7 @@
 
 @import "base/_base.css";
 @import "base/_typography.css";
+@import "base/_utilities.css";
 
 @import "components/_button.css";
 @import "components/_dropdown.css";

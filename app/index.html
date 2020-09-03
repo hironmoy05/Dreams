@@ -8,16 +8,96 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,800&display=swap"
     rel="stylesheet">
+
 </head>
 
 <body>
   <header class="header">
-    Header
+    <div class="container">
+      <div class="row">
+        <div class="col-2-12">
+          <div class="header__logo">
+            <img src="./assets/img/logo.png" alt="Logo" class="logo">
+          </div>
+        </div>
+
+        <div class="col-5-12">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item active"><a href="#" class="nav__link">Home</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Courses</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Pages
+                  <ul class="dropbox">
+                    <li class="dropbox__list"><a href="#" class="dropbox__link">About</a></li>
+                    <li class="dropbox__list"><a href="#" class="dropbox__link">Instructor</a></li>
+                    <li class="dropbox__list"><a href="#" class="dropbox__link">Pricing</a></li>
+                    <li class="dropbox__list"><a href="#" class="dropbox__link">FAQ</a></li>
+                    <li class="dropbox__list"><a href="#" class="dropbox__link">Course Details</a></li>
+                    <li class="dropbox__list"><a href="#" class="dropbox__link">Blog Details</a></li>
+                  </ul>
+                </a></li>
+              <li class="nav__item"><a href="#" class="nav__link">News</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-5-12">
+          <div class="header__right">
+            <div class="header__right__search">
+              <a href="#">
+                <svg class="header__right__icons-search">
+                  <use xlink:href="/assets/img/icons/svg/sprite.svg#icon-search"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="header__right__social">
+              <a href="#">
+                <svg class="header__right__icons-facebook">
+                  <use xlink:href="/assets/img/icons/svg/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="header__right__icons-twitter">
+                  <use xlink:href="/assets/img/icons/svg/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="header__right__icons-instagram">
+                  <use xlink:href="/assets/img/icons/svg/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="header__right__icons-youtube">
+                  <use xlink:href="/assets/img/icons/svg/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="header__right__btn">
+              <a href="#" class="btn btn--yellow">Get started</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </header>
 
-  <main class="main-container">
+  <main>
     <section class="section-hero">
-      Hero
+      <div class="hero">
+        <div class="hero__text-box">
+          <h1 class="heading-primary">
+            <span class="heading-primary--small u-margin-bottom-small">Best options for you</span>
+            <span class="heading-primary--big u-margin-bottom-small">Drive safe & get license</span>
+          </h1>
+        </div>
+
+        <div class="hero__button">
+          <a href="#" class="btn btn--yellow">Contact us</a>
+          <a href="#" class="btn btn--blue">See courses</a>
+        </div>
+      </div>
     </section>
 
     <section class="section-feature">

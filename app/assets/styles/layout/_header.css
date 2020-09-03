@@ -1,0 +1,58 @@
+.header {
+  background-color: $color-primary;
+  position: relative;
+  z-index: 1;
+
+  &__logo {
+    height: 7.7rem;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    z-index: 1;
+
+    @mixin tabPort {
+      height: 6.5rem;
+    }
+
+    @mixin bigDesktop {
+      height: 5.8rem;
+    }
+
+    &::after {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -18.3rem;
+      z-index: -1;
+      content: "";
+      width: 35.5rem;
+      height: 100%;
+      background-color: $color-secondary;
+      clip-path: polygon(0 0, 100% 0, 96% 100%, 0 100%);
+
+      @mixin phone {
+        left: -18.4rem;
+      }
+
+      @mixin tabPort {
+        left: -21rem;
+      }
+
+      @mixin desktop {
+        left: -22.5rem;
+      }
+    }
+  }
+
+  .logo {
+
+    @mixin bigDesktop {
+      padding-left: 1rem;
+    }
+  }
+
+  &__icons {
+    display: inline-block;
+  }
+
+}

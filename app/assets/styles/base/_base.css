@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  /*//* 10 / 16 = 67.5%, now default is 10px */
+  box-sizing: border-box;
+
+  @mixin tabPort {
+    font-size: 75%;
+    /*//* 12 / 16 = 75%, now default is 12px */
+  }
+
+  @mixin desktop {
+    font-size: 87.5%;
+    /*//* 14 / 16 = 87.5%, now default is 14px */
+  }
+
+  @mixin bigDesktop {
+    font-size: 100%;
+    /*//* now default is 16px */
+  }
+}

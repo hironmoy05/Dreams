@@ -1,0 +1,52 @@
+.header__right {
+  display: none;
+
+  @mixin tabLand {
+    display: block;
+    height: 6.5rem;
+    display: flex;
+    align-items: center;
+
+    @mixin bigDesktop {
+      height: 5.8rem;
+    }
+
+    &__search {
+      margin-left: auto;
+      padding-right: 2rem;
+      position: relative;
+
+    }
+
+    &__search::after {
+      content: "";
+      height: 1.08rem;
+      width: 2px;
+      display: inline-block;
+      background-color: rgba($white, .4);
+      position: absolute;
+      top: .2rem;
+      left: 1.5rem;
+    }
+
+    &__social {
+      margin-right: 2rem;
+
+      & a {
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    &__icons-search,
+    &__icons-facebook,
+    &__icons-twitter,
+    &__icons-instagram,
+    &__icons-youtube {
+      width: 1rem;
+      height: 1rem;
+      fill: $white;
+    }
+  }
+}

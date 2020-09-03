@@ -1,0 +1,23 @@
+.btn {
+
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-size: .9rem;
+    font-weight: 700;
+    color: $white;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .8rem 1.5rem;
+  }
+
+  &--yellow {
+    background-color: $color-secondary;
+  }
+
+  &--blue {
+    background-color: $color-primary;
+    margin-left: 1rem;
+  }
+}

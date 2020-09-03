@@ -1,0 +1,68 @@
+.nav {
+  display: none;
+
+  @mixin tabLand {
+    margin-left: 1.5rem;
+  }
+
+  @mixin desktop {
+    margin-left: 1rem;
+  }
+
+  @mixin tabLand {
+    display: block;
+
+    &__list {
+      display: inline-flex;
+      height: 6.5rem;
+      align-items: center;
+
+      @mixin bigDesktop {
+        height: 5.8rem;
+      }
+    }
+
+
+    &__item {
+      list-style: none;
+
+      &:not(:last-child) {
+        margin-right: 2.5rem;
+      }
+
+      position: relative;
+    }
+
+    &__item::after {
+      content: "";
+      position: absolute;
+      top: 1.7rem;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $color-secondary;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .2s;
+    }
+
+    &__item:hover::after,
+    .active::after {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &__link {
+
+      &:link,
+      &:visited {
+        font-size: .91rem;
+        font-weight: 700;
+        letter-spacing: .5px;
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

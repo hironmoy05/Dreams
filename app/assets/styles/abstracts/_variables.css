@@ -34,3 +34,6 @@ $default-font-color: #212529;
 
 $text: #666666;
 
+/* Grid */
+$gutter-horizontal: 0;
+$gutter-vertical: 4rem;
