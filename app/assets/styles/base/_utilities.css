@@ -2,10 +2,6 @@
   margin-top: 8rem;
 }
 
-.u-center-text {
-  text-align: center;
-}
-
 .u-margin-bottom-small {
   margin-bottom: 1.5rem;
 }
@@ -24,4 +20,13 @@
 
 .u-margin-bottom-xxl {
   margin-bottom: 6rem;
+}
+
+.flex-item-center {
+  align-self: center;
+}
+
+.mrRight {
+  margin-right: 1rem;
+
 }

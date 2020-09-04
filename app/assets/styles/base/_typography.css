@@ -24,3 +24,24 @@ body {
     text-transform: uppercase;
   }
 }
+
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+
+  @mixin tabPort {
+    font-size: 2.5rem;
+  }
+}
+
+.heading-quaternary {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+
+  @mixin tabPort {
+    font-size: 1.1rem;
+
+  }
+}

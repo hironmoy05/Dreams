@@ -16,7 +16,7 @@ main {
 }
 
 .section-feature {
-  background-color: $cyan;
+  padding: 6rem 0;
 }
 
 .section-about {

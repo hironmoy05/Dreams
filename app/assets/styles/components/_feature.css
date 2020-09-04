@@ -1,0 +1,55 @@
+.feature__text {
+	&-title {
+		span {
+			display: inline-block;
+			color: $color-secondary;
+			font-size: 1.6rem;
+			font-weight: 700;
+			margin-bottom: .5rem;
+
+			@mixin tabPort {
+				font-size: 1.4rem;
+			}
+
+			@mixin desktop {
+				font-size: 1.2rem;
+			}
+		}
+	}
+
+	&-para {
+		font-size: 1.5rem;
+		line-height: 1.8;
+		margin-bottom: 2rem;
+
+		@mixin tabPort {
+			font-size: 1.3rem;
+		}
+
+		@mixin desktop {
+			font-size: 1rem;
+		}
+	}
+}
+
+.feature__item {
+	padding: 3em 2rem 2rem 2rem;
+	text-align: center;
+	color: $white;
+	background-color: $color-primary;
+	margin-bottom: 2rem;
+
+	@mixin phone {
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	@mixin bigDesktop {
+		padding: 4.5rem 2rem 3.5rem 2rem;
+	}
+
+	& img {
+		margin-bottom: 1rem;
+	}
+}
